@@ -19,7 +19,7 @@
 
 			<button class="search-submit" name="submit" id="searchsubmit" onclick="facetwp_redirect_to_listings()">
 				<?php get_template_part( 'assets/svg/search-icon-svg'); ?>
-				<span><?php esc_html_e( 'Search', 'listable' ); ?></span>
+				<span><?php esc_html_e( '검색', 'listable' ); ?></span>
 			</button>
 
 		</div>
