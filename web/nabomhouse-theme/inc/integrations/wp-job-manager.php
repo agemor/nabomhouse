@@ -370,12 +370,12 @@ function custom_submit_job_form_fields( $fields ) {
 
 	// uncomment here to see what you can do
 
-	$fields['job']['job_title']['label']       = esc_html__( 'Listing Name', 'listable' );
-	$fields['job']['job_title']['placeholder'] = esc_html__( 'Your listing name', 'listable' );
+	$fields['job']['job_title']['label']       = esc_html__( '하숙 이름', 'listable' );
+	$fields['job']['job_title']['placeholder'] = esc_html__( '하숙집 이름을 써주세요', 'listable' );
 
 	$fields['company']['company_tagline']['priority']    = 2.1;
-	$fields['company']['company_tagline']['placeholder'] = esc_html__( 'e.g Speciality Coffee Shop', 'listable' );
-	$fields['company']['company_tagline']['description'] = sprintf( '<span class="description_tooltip left">%s</span>', esc_html__( 'Keep it short and descriptive as it will appear on search results instead of the link description', 'listable' ) );
+	$fields['company']['company_tagline']['placeholder'] = esc_html__( '하숙집 한 줄 요약을 써주세요.', 'listable' );
+	// $fields['company']['company_tagline']['description'] = sprintf( '<span class="description_tooltip left">%s</span>', esc_html__( 'Keep it short and descriptive as it will appear on search results instead of the link description', 'listable' ) );
 
 	$fields['job']['job_description']['priority']    = 2.2;
 //	$fields['job']['job_description']['type']        = 'textarea';
@@ -408,21 +408,21 @@ function custom_submit_job_form_fields( $fields ) {
 	$fields['company']['main_image']['placeholder']        = '';
 	$fields['company']['main_image']['allowed_mime_types'] = $fields['company']['company_logo']['allowed_mime_types'];
 	$fields['company']['main_image']['multiple']           = true;
-	$fields['company']['main_image']['description']        = esc_html__( 'The first image will be shown on listing cards.', 'listable' );
+	$fields['company']['main_image']['description']        = esc_html__( '첫 번째 이미지가 대표 이미지로 등록됩니다.', 'listable' );
 
 	$fields['company']['company_logo']['label']       = esc_html__( 'Logo', 'listable' );
 	$fields['company']['company_logo']['priority']    = 2.6;
 	$fields['company']['company_logo']['multiple']    = false;
-	$fields['company']['company_logo']['description'] = esc_html__( 'The first image will be shown on listing cards.', 'listable' );
+	$fields['company']['company_logo']['description'] = esc_html__( '첫 번째 이미지가 대표 이미지로 등록됩니다.', 'listable' );
 
-	$fields['job']['job_hours'] = array(
-		'label'       => esc_html__( 'Hours of Operation', 'listable' ),
-		'type'        => 'textarea',
-		'placeholder' => esc_html__( "Mon - Fri: 09:00 - 23:00 \nSat - Sun: 17:00 - 23:00", 'listable' ),
-		'description' => sprintf( '<span class="description_tooltip right">%s</span>', esc_html__( 'Feel free to change the text format to fit your needs.', 'listable' ) ),
-		'required'    => false,
-		'priority'    => 2.7
-	);
+	// $fields['job']['job_hours'] = array(
+	// 	'label'       => esc_html__( 'Hours of Operation', 'listable' ),
+	// 	'type'        => 'textarea',
+	// 	'placeholder' => esc_html__( "Mon - Fri: 09:00 - 23:00 \nSat - Sun: 17:00 - 23:00", 'listable' ),
+	// 	'description' => sprintf( '<span class="description_tooltip right">%s</span>', esc_html__( 'Feel free to change the text format to fit your needs.', 'listable' ) ),
+	// 	'required'    => false,
+	// 	'priority'    => 2.7
+	// );
 
 	$fields['company']['company_phone'] = array(
 		'label'       => esc_html__( 'Phone', 'listable' ),
@@ -433,8 +433,8 @@ function custom_submit_job_form_fields( $fields ) {
 	);
 
 	$fields['company']['company_website']['priority']    = 2.9;
-	$fields['company']['company_website']['placeholder'] = esc_html__( 'e.g yourwebsite.com, London', 'listable' );
-	$fields['company']['company_website']['description'] = sprintf( '<span class="description_tooltip left">%s</span>', esc_html__( 'You can add more similar panels to better help the user fill the form', 'listable' ) );
+	$fields['company']['company_website']['placeholder'] = esc_html__( '웹사이트가 있다면 그 주소를 적어주세요.', 'listable' );
+	// $fields['company']['company_website']['description'] = sprintf( '<span class="description_tooltip left">%s</span>', esc_html__( 'You can add more similar panels to better help the user fill the form', 'listable' ) );
 
 
 
