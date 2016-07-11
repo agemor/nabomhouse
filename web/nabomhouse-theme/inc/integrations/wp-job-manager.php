@@ -75,7 +75,7 @@ function listable_change_taxonomy_job_listing_type_args( $args ) {
 add_filter( 'register_taxonomy_job_listing_type_args', 'listable_change_taxonomy_job_listing_type_args' );
 
 function listable_change_taxonomy_job_listing_category_args( $args ) {
-	$singular = esc_html__( 'Listing Category', 'listable' );
+	$singular = esc_html__( '분류', 'listable' );
 	$plural   = esc_html__( 'Listings Categories', 'listable' );
 
 	$args['label'] = $plural;
@@ -385,8 +385,8 @@ function custom_submit_job_form_fields( $fields ) {
 	$fields['job']['job_category']['priority']    = 2.3;
 	$fields['job']['job_category']['placeholder'] = esc_html__( 'Choose one or more categories', 'listable' );
 
-	$fields['job']['job_category']['label'] = esc_html__( 'Listing category', 'listable' );
-	$fields['job']['job_category']['description'] = sprintf( '<span class="description_tooltip right">%s</span>', esc_html__( 'Visitors can filter their search by the categories and amenities they want - so make sure you choose them wisely and include all the relevant ones', 'listable' ) );
+	$fields['job']['job_category']['label'] = esc_html__( '분류', 'listable' );
+	$fields['job']['job_category']['description'] = sprintf( '<span class="description_tooltip right">%s</span>', esc_html__( '하숙을 눌러주세요', 'listable' ) );
 
 	if ( class_exists( 'WP_Job_Manager_Job_Tags' ) ) {
 		$fields['job']['job_tags']['priority']    = 2.4;
@@ -397,11 +397,11 @@ function custom_submit_job_form_fields( $fields ) {
 	}
 
 	$fields['job']['job_location']['priority']    = 2.5;
-	$fields['job']['job_location']['placeholder'] = esc_html__( 'e.g 34 Wigmore Street, London', 'listable' );
-	$fields['job']['job_location']['description'] = esc_html__( 'Leave this blank if the location is not important.', 'listable' );
+	$fields['job']['job_location']['placeholder'] = esc_html__( '주소를 적어주세요', 'listable' );
+	$fields['job']['job_location']['description'] = esc_html__( '', 'listable' );
+	// Leave this blank if the location is not important.
 
-
-	$fields['company']['main_image']['label']              = esc_html__( 'Gallery Images', 'listable' );
+	$fields['company']['main_image']['label']              = esc_html__( '사진', 'listable' );
 	$fields['company']['main_image']['priority']           = 2.6;
 	$fields['company']['main_image']['required']           = false;
 	$fields['company']['main_image']['type']               = 'file';
@@ -409,7 +409,7 @@ function custom_submit_job_form_fields( $fields ) {
 	$fields['company']['main_image']['placeholder']        = '';
 	$fields['company']['main_image']['allowed_mime_types'] = $fields['company']['company_logo']['allowed_mime_types'];
 	$fields['company']['main_image']['multiple']           = true;
-	$fields['company']['main_image']['description']        = esc_html__( '첫 번째 이미지가 대표 이미지로 등록됩니다.', 'listable' );
+	$fields['company']['main_image']['description']        = esc_html__( '하숙집 외경과 방 사진을 올려주세요. 첫 번째 이미지가 대표 이미지로 등록됩니다.', 'listable' );
 
 	$fields['company']['company_logo']['label']       = esc_html__( 'Logo', 'listable' );
 	$fields['company']['company_logo']['priority']    = 2.6;

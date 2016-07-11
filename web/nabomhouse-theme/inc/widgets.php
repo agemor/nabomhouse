@@ -424,7 +424,7 @@ class Listing_Sidebar_Gallery_Widget extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'listing_sidebar_gallery', // Base ID
-			'&#x1F536; ' . esc_html__( 'Listing', 'listable' ) . ' &raquo; ' . esc_html__( 'Gallery Images', 'listable' ), // Name
+			'&#x1F536; ' . esc_html__( 'Listing', 'listable' ) . ' &raquo; ' . esc_html__( '사진', 'listable' ), // Name
 			array( 'description' => esc_html__( 'The attached images in a gallery grid format.', 'listable' ), ) // Args
 		);
 	}
@@ -582,7 +582,7 @@ class Listing_Sidebar_Claim_Listing_Widget extends WP_Widget {
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'claim_description_text' ); ?>"><?php _e( 'Description:', 'listable' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'claim_description_text' ); ?>"><?php _e( '상세 설명:', 'listable' ); ?></label>
 			<textarea class="widefat" id="<?php echo $this->get_field_id( 'claim_description_text' ); ?>" name="<?php echo $this->get_field_name( 'claim_description_text' ); ?>"><?php
 				echo esc_attr( $claim_description_text ); ?></textarea>
 		</p>

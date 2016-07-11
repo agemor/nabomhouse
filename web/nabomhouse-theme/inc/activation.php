@@ -20,7 +20,7 @@ if ( ! function_exists( 'listable_config_getting_active' ) ) :
 			'metaboxes'        => array(
 				'_listing_the_aside' => array(
 					'id'         => 'listing_aside',
-					'title'      => esc_html__( 'Gallery Images', 'listable' ),
+					'title'      => esc_html__( '사진', 'listable' ),
 					'pages'      => array( 'job_listing' ), // Post type
 					'context'    => 'side',
 					'priority'   => 'low',

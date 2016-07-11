@@ -60,7 +60,7 @@ class Listable_Theme_Tour {
 					'content'      => sprintf(
 						'<p>%s <strong>%s</strong> %s.</p>',
 						esc_html__( 'Add a short and descriptive', 'listable' ),
-						esc_html__( 'Tagline', 'listable' ),
+						esc_html__( '요약', 'listable' ),
 						esc_html__( 'like "Speciality Coffee Shop"', 'listable' )
 					),
 					'position'     => array(
