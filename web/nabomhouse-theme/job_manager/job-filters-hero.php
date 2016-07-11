@@ -126,7 +126,7 @@ $fields_num = count( $fields_options );
 
 		<div class="search-field-wrapper  search-filter-wrapper<?php echo $has_search_menu ? '  has--menu' : ''; ?>">
 			<label for="search_keywords"><?php _e( 'Keywords', 'listable' ); ?></label>
-			<input class="search-field  js-search-suggestions-field" type="text" name="search_keywords" id="search_keywords" placeholder="<?php esc_html_e( 'What are you looking for?', 'listable' ); ?>" autocomplete="off" value="<?php the_search_query(); ?>"/>
+			<input class="search-field  js-search-suggestions-field" type="text" name="search_keywords" id="search_keywords" placeholder="<?php esc_html_e( '어떤 하숙을 찾으시나요?', 'listable' ); ?>" autocomplete="off" value="<?php the_search_query(); ?>"/>
 			<?php wp_nav_menu( array(
 				'container' => false,
 				'theme_location' => 'search_suggestions',

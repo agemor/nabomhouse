@@ -76,7 +76,7 @@ if ( ! is_page_template( 'page-templates/front_page.php') ) :
 			} ?>
 			<div class="search-field-wrapper<?php if ( $has_search_menu ) echo '  has--menu'; ?>">
 				<label for="search_keywords"><?php esc_html_e( 'Keywords', 'listable' ); ?></label>
-				<input class="search-field  js-search-mobile-field  js-search-suggestions-field" type="text" name="search_keywords" id="search_keywords" placeholder="<?php esc_html_e( '어떤 하숙집을 찾으시나요?', 'listable' ); ?>" autocomplete="off" value="<?php the_search_query(); ?>"/>
+				<input class="search-field  js-search-mobile-field  js-search-suggestions-field" type="text" name="search_keywords" id="search_keywords" placeholder="<?php esc_html__( '어떤 하숙을 찾으시나요?', 'listable' ); ?>" autocomplete="off" value="<?php the_search_query(); ?>"/>
 
 				<?php wp_nav_menu( array(
 					'container' => false,
