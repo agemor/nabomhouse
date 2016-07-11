@@ -85,8 +85,8 @@
 		<input type="hidden" name="search_keywords" id="search_keywords" value="<?php echo esc_attr( $keywords ); ?>"/>
 
 		<div class="search_location">
-			<label for="search_location"><?php esc_html_e( 'Location', 'listable' ); ?></label>
-			<input type="text" name="search_location" id="search_location" placeholder="<?php esc_attr_e( 'Location', 'listable' ); ?>" value="<?php echo esc_attr( $location ); ?>"/>
+			<label for="search_location"><?php esc_html_e( '위치', 'listable' ); ?></label>
+			<input type="text" name="search_location" id="search_location" placeholder="<?php esc_attr_e( '위치', 'listable' ); ?>" value="<?php echo esc_attr( $location ); ?>"/>
 		</div>
 
 		<div class="select-categories">

@@ -140,14 +140,14 @@ $fields_num = count( $fields_options );
 		<?php if ( in_array( 'location', $fields_options ) ): ?>
 
 			<div class="search_location  search-filter-wrapper">
-				<label for="search_location"><?php esc_html_e( 'Location', 'listable' ); ?></label>
+				<label for="search_location"><?php esc_html_e( '위치', 'listable' ); ?></label>
 				<?php if ( class_exists( 'Astoundify_Job_Manager_Regions' ) && "1" === get_option('job_manager_regions_filter') ) { ?>
 					<div class="search_region-dummy">
-						<input type="text" name="search_location" id="search_location" placeholder="<?php esc_attr_e( 'Location', 'listable' ); ?>" style="display: none;" />
+						<input type="text" name="search_location" id="search_location" placeholder="<?php esc_attr_e( '위치', 'listable' ); ?>" style="display: none;" />
 						<input type="text" class="select-region-dummy  search-field" disabled="disabled" placeholder="<?php esc_attr_e( 'All Regions', 'listable' ); ?>" />
 					</div>
 				<?php } else { ?>
-					<input type="text" name="search_location" id="search_location" placeholder="<?php esc_attr_e( 'Location', 'listable' ); ?>" />
+					<input type="text" name="search_location" id="search_location" placeholder="<?php esc_attr_e( '위치', 'listable' ); ?>" />
 				<?php } ?>
 			</div>
 

@@ -329,9 +329,9 @@ function listable_add_hours_field( $fields ) {
 	);
 
 	$fields['_company_phone'] = array(
-		'label'       => esc_html__( 'Phone', 'listable' ),
+		'label'       => esc_html__( '전화번호', 'listable' ),
 //		'type'        => 'number',
-		'placeholder' => esc_html__( 'e.g +42-898-4364', 'listable' ),
+		'placeholder' => esc_html__( '대표 전화번호를 적어주세', 'listable' ),
 //		'description' => ''
 		'priority'    => 2.4
 	);
@@ -384,9 +384,8 @@ function custom_submit_job_form_fields( $fields ) {
 
 	$fields['job']['job_category']['priority']    = 2.3;
 	$fields['job']['job_category']['placeholder'] = esc_html__( 'Choose one or more categories', 'listable' );
-
 	$fields['job']['job_category']['label'] = esc_html__( '분류', 'listable' );
-	$fields['job']['job_category']['description'] = sprintf( '<span class="description_tooltip right">%s</span>', esc_html__( '하숙을 눌러주세요', 'listable' ) );
+	$fields['job']['job_category']['description'] = sprintf( '<span class="description_tooltip right">%s</span>', esc_html__( '"하숙"을 눌러주세요', 'listable' ) );
 
 	if ( class_exists( 'WP_Job_Manager_Job_Tags' ) ) {
 		$fields['job']['job_tags']['priority']    = 2.4;
@@ -426,9 +425,9 @@ function custom_submit_job_form_fields( $fields ) {
 	// );
 
 	$fields['company']['company_phone'] = array(
-		'label'       => esc_html__( 'Phone', 'listable' ),
+		'label'       => esc_html__( '전화번호', 'listable' ),
 		'type'        => 'text',
-		'placeholder' => esc_html__( 'e.g +42-898-4364', 'listable' ),
+		'placeholder' => esc_html__( '대표 전화번호를 적어주세요', 'listable' ),
 		'required'    => false,
 		'priority'    => 2.8
 	);
@@ -832,7 +831,7 @@ function listable_submit_form_preview() {
 				<input type="hidden" name="job_manager_form" value="<?php echo $instance->form_name; ?>"/>
 
 				<h2>
-					<?php _e( 'Preview', 'listable' ); ?>
+					<?php _e( '미리보기', 'listable' ); ?>
 				</h2>
 			</div>
 			<?php get_job_manager_template_part( 'content-single', 'job_listing-preview' ); ?>

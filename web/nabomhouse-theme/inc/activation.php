@@ -86,7 +86,7 @@ if ( ! function_exists( 'listable_config_getting_active' ) ) :
 							'type' => 'multicheck',
 							'options' => array(
 								'keywords' => esc_html__( 'Keywords', 'listable' ),
-								'location' => esc_html__( 'Location', 'listable' ),
+								'location' => esc_html__( '위치', 'listable' ),
 								'categories' => esc_html__( 'Categories', 'listable' ),
 							),
 							'std' => array('keywords'),

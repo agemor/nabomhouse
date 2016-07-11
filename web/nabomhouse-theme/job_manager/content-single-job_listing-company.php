@@ -48,7 +48,7 @@ $twitter = get_post_meta( get_the_ID(), '_company_twitter', true);
 	if ( $website = get_the_company_website() ) {
 		$website_pure = preg_replace('#^https?://#', '', rtrim(esc_url($website),'/'));
 		if ( strlen( $website_pure ) > 30 ) : ?>
-			<a class="listing-contact  listing--website" href="<?php echo esc_url( $website ); ?>" itemprop="url" target="_blank" rel="nofollow"><?php esc_html_e( 'Website', 'listable' ); ?></a>
+			<a class="listing-contact  listing--website" href="<?php echo esc_url( $website ); ?>" itemprop="url" target="_blank" rel="nofollow"><?php esc_html_e( '웹사이트 주소', 'listable' ); ?></a>
 		<?php else : ?>
 			<a class="listing-contact  listing--website" href="<?php echo esc_url( $website ); ?>" itemprop="url" target="_blank" rel="nofollow"><?php echo $website_pure; ?></a>
 		<?php endif; ?>
