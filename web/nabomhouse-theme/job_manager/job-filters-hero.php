@@ -168,7 +168,7 @@ $fields_num = count( $fields_options );
 
 		<button class="search-submit" name="submit" id="searchsubmit">
 			<?php get_template_part( 'assets/svg/search-icon-svg'); ?>
-			<span><?php esc_html_e( 'Search', 'listable' ); ?></span>
+			<span><?php esc_html_e( '검색', 'listable' ); ?></span>
 		</button>
 	</div>
 
