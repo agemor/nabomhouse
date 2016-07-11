@@ -31,7 +31,7 @@ function listable_change_job_into_listing( $args ) {
 		'not_found_in_trash' => sprintf( esc_html__( 'No %s found in trash', 'listable' ), $plural ),
 		'parent'             => sprintf( esc_html__( 'Parent %s', 'listable' ), $singular )
 	);
-	$args['description'] = sprintf( esc_html__( 'This is where you can create and manage %s.', 'listable' ), $plural );
+	// $args['description'] = sprintf( esc_html__( 'This is where you can create and manage %s.', 'listable' ), $plural );
 	$args['supports']    = array( 'title', 'editor', 'custom-fields', 'publicize', 'comments', 'thumbnail' );
 	$args['rewrite']     = array( 'slug' => 'listings' );
 

@@ -201,7 +201,7 @@ function listable_scripts() {
 		'strings' => array(
 			'wp-job-manager-file-upload' => esc_html__( 'Add Photo', 'listable' ),
 			'no_job_listings_found' => esc_html__( 'No results', 'listable' ),
-			'results-no' => esc_html__( 'Results', 'listable'), //@todo this is not quite right as it is tied to the number of results - they can 1 or 0
+			'results-no' => esc_html__( '개의 결과', 'listable'), //@todo this is not quite right as it is tied to the number of results - they can 1 or 0
 
 		)
 	) );

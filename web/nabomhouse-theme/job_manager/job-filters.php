@@ -123,7 +123,7 @@
 					<label for="search_categories"><?php esc_html_e( 'Category', 'listable' ); ?></label>
 					<?php job_manager_dropdown_categories( array( 'taxonomy'        => 'job_listing_category',
 					                                              'hierarchical'    => 1,
-					                                              'show_option_all' => esc_html__( 'Any category', 'listable' ),
+					                                              'show_option_all' => esc_html__( '모든 결과', 'listable' ),
 					                                              'name'            => 'search_categories',
 					                                              'orderby'         => 'name',
 					                                              'selected'        => $selected_category,

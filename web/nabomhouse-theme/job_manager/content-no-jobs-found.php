@@ -6,7 +6,7 @@
 */
 
 if ( defined( 'DOING_AJAX' ) ) : ?>
-	<li class="no_job_listings_found"><?php esc_html_e( 'There are no listings matching your search.', 'listable' ); ?></li>
+	<li class="no_job_listings_found"><?php esc_html_e( '검색 결과가 없습니다.', 'listable' ); ?></li>
 <?php else : ?>
-	<p class="no_job_listings_found"><?php esc_html_e( 'There are no listings matching your search.', 'listable' ); ?></p>
+	<p class="no_job_listings_found"><?php esc_html_e( '검색 결과가 없습니다.', 'listable' ); ?></p>
 <?php endif; ?>
