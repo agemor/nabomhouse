@@ -138,7 +138,7 @@ class Listing_Actions_Widget extends WP_Widget {
 					<?php get_template_part( 'assets/svg/write-a-review-icon-svg' ); ?>
 
 				</span>
-					<span class="action__text"><?php esc_html_e( 'Write a review', 'listable' ); ?></span>
+					<span class="action__text"><?php esc_html_e( '리뷰 작성', 'listable' ); ?></span>
 					<span class="action__text--mobile"><?php esc_html_e( 'Review', 'listable' ); ?></span>
 				</a>
 
@@ -321,7 +321,7 @@ class Listing_Sidebar_Map_Widget extends WP_Widget {
 				<?php } ?>
 			</address>
 			<?php if ( ! empty( $get_directions_link ) ) { ?>
-				<a href="<?php echo $get_directions_link; ?>" class="listing-address-directions" target="_blank"><?php esc_html_e( 'Get directions', 'listable' ); ?></a>
+				<a href="<?php echo $get_directions_link; ?>" class="listing-address-directions" target="_blank"><?php esc_html_e( '길 찾기', 'listable' ); ?></a>
 			<?php } ?>
 		</div><!-- .listing-map-content -->
 

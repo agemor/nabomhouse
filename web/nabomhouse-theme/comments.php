@@ -30,7 +30,7 @@ if ( post_password_required() ) {
 
 			if ( 'job_listing' === get_post_type() && class_exists( 'PixReviewsPlugin' ) ) {
 				printf( // WPCS: XSS OK.
-					esc_html( _nx( '1 review', '%1$s reviews', get_comments_number(), 'comments title', 'listable' ) ),
+					esc_html( _nx( '1 review', '%1$s 개의 리뷰', get_comments_number(), 'comments title', 'listable' ) ),
 					number_format_i18n( get_comments_number() ),
 					'<span>' . get_the_title() . '</span>'
 				);
@@ -88,7 +88,7 @@ if ( post_password_required() ) {
 
 	$comment_args = array();
 	if ( 'job_listing' === get_post_type() && class_exists( 'PixReviewsPlugin' ) ) {
-		$comment_args['title_reply'] = esc_html__( 'Rate and write a review', 'listable' );
+		$comment_args['title_reply'] = esc_html__( '리뷰 작성', 'listable' );
 	}
 	comment_form( $comment_args );
 	?>

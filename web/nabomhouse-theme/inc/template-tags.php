@@ -260,7 +260,7 @@ if ( ! function_exists( 'shape_comment' ) ) :
 			case 'pingback' :
 			case 'trackback' : ?>
 				<li class="post pingback">
-				<p><?php esc_html_e( 'Pingback:', 'listable' ); ?><?php comment_author_link(); ?><?php edit_comment_link( esc_html__( '(Edit)', 'listable' ), ' ' ); ?></p>
+				<p><?php esc_html_e( 'Pingback:', 'listable' ); ?><?php comment_author_link(); ?><?php edit_comment_link( esc_html__( '편집', 'listable' ), ' ' ); ?></p>
 				<?php
 				break;
 			default :
@@ -305,7 +305,7 @@ if ( ! function_exists( 'shape_comment' ) ) :
 									<time pubdate datetime="<?php comment_time( 'c' ); ?>">
 										<?php printf( esc_html__( 'on %1$s', 'listable' ), get_comment_date() ); ?>
 									</time>
-								</a><?php edit_comment_link( esc_html__( '(Edit)', 'listable' ), ' ' ); ?>
+								</a><?php edit_comment_link( esc_html__( '편', 'listable' ), ' ' ); ?>
 							</div>
 						</header>
 						<div class="comment-content">
@@ -336,7 +336,7 @@ function listable_move_comment_date( $comment_content ) {
 <a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time pubdate datetime="<?php comment_time( 'c' ); ?>"><?php
 		/* translators: 1: date, 2: time */
 		printf( esc_html__( 'on %1$s', 'listable' ), get_comment_date() ); ?></time>
-	</a><?php edit_comment_link( esc_html__( '(Edit)', 'listable' ), ' ' ); ?></div><?php
+	</a><?php edit_comment_link( esc_html__( '편집', 'listable' ), ' ' ); ?></div><?php
 
 	return ob_get_clean() . $comment_content;
 }
