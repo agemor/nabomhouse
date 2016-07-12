@@ -97,7 +97,7 @@ class WP_Job_Manager_Post_Types {
 						'parent_item_colon' => sprintf( __( 'Parent %s:', 'wp-job-manager' ), $singular ),
 						'edit_item'         => sprintf( __( 'Edit %s', 'wp-job-manager' ), $singular ),
 						'update_item'       => sprintf( __( 'Update %s', 'wp-job-manager' ), $singular ),
-						'add_new_item'      => sprintf( __( 'Add New %s', 'wp-job-manager' ), $singular ),
+						'add_new_item'      => sprintf( __( '추가 %s', 'wp-job-manager' ), $singular ),
 						'new_item_name'     => sprintf( __( 'New %s Name', 'wp-job-manager' ),  $singular )
 	            	),
 		            'show_ui' 				=> true,
@@ -137,14 +137,14 @@ class WP_Job_Manager_Post_Types {
                     'name' 				=> $plural,
                     'singular_name' 	=> $singular,
                     'menu_name'         => ucwords( $plural ),
-                    'search_items' 		=> sprintf( __( 'Search %s', 'wp-job-manager' ), $plural ),
-                    'all_items' 		=> sprintf( __( 'All %s', 'wp-job-manager' ), $plural ),
-                    'parent_item' 		=> sprintf( __( 'Parent %s', 'wp-job-manager' ), $singular ),
-                    'parent_item_colon' => sprintf( __( 'Parent %s:', 'wp-job-manager' ), $singular ),
-                    'edit_item' 		=> sprintf( __( 'Edit %s', 'wp-job-manager' ), $singular ),
-                    'update_item' 		=> sprintf( __( 'Update %s', 'wp-job-manager' ), $singular ),
-                    'add_new_item' 		=> sprintf( __( 'Add New %s', 'wp-job-manager' ), $singular ),
-                    'new_item_name' 	=> sprintf( __( 'New %s Name', 'wp-job-manager' ),  $singular )
+                    'search_items' 		=> sprintf( __( '검색 %s', 'wp-job-manager' ), $plural ),
+                    'all_items' 		=> sprintf( __( '모든 항목 %s', 'wp-job-manager' ), $plural ),
+                    'parent_item' 		=> sprintf( __( '상위 폴더로 %s', 'wp-job-manager' ), $singular ),
+                    'parent_item_colon' => sprintf( __( '상위 폴더로 %s:', 'wp-job-manager' ), $singular ),
+                    'edit_item' 		=> sprintf( __( '편집 %s', 'wp-job-manager' ), $singular ),
+                    'update_item' 		=> sprintf( __( '업데이트 %s', 'wp-job-manager' ), $singular ),
+                    'add_new_item' 		=> sprintf( __( '추가 %s', 'wp-job-manager' ), $singular ),
+                    'new_item_name' 	=> sprintf( __( '새 이름 설정 %s', 'wp-job-manager' ),  $singular )
             	),
 	            'show_ui' 				=> true,
 	            'public' 			    => $public,
@@ -182,20 +182,20 @@ class WP_Job_Manager_Post_Types {
 				'labels' => array(
 					'name' 					=> $plural,
 					'singular_name' 		=> $singular,
-					'menu_name'             => __( 'Job Listings', 'wp-job-manager' ),
+					'menu_name'             => __( '하숙 정보', 'wp-job-manager' ),
 					'all_items'             => sprintf( __( 'All %s', 'wp-job-manager' ), $plural ),
-					'add_new' 				=> __( 'Add New', 'wp-job-manager' ),
+					'add_new' 				=> __( '추가', 'wp-job-manager' ),
 					'add_new_item' 			=> sprintf( __( 'Add %s', 'wp-job-manager' ), $singular ),
-					'edit' 					=> __( 'Edit', 'wp-job-manager' ),
-					'edit_item' 			=> sprintf( __( 'Edit %s', 'wp-job-manager' ), $singular ),
-					'new_item' 				=> sprintf( __( 'New %s', 'wp-job-manager' ), $singular ),
-					'view' 					=> sprintf( __( 'View %s', 'wp-job-manager' ), $singular ),
-					'view_item' 			=> sprintf( __( 'View %s', 'wp-job-manager' ), $singular ),
-					'search_items' 			=> sprintf( __( 'Search %s', 'wp-job-manager' ), $plural ),
-					'not_found' 			=> sprintf( __( 'No %s found', 'wp-job-manager' ), $plural ),
+					'edit' 					=> __( '편집', 'wp-job-manager' ),
+					'edit_item' 			=> sprintf( __( '편집 %s', 'wp-job-manager' ), $singular ),
+					'new_item' 				=> sprintf( __( '새 항목 %s', 'wp-job-manager' ), $singular ),
+					'view' 					=> sprintf( __( '보기 %s', 'wp-job-manager' ), $singular ),
+					'view_item' 			=> sprintf( __( '보기 %s', 'wp-job-manager' ), $singular ),
+					'search_items' 			=> sprintf( __( '검색 %s', 'wp-job-manager' ), $plural ),
+					'not_found' 			=> sprintf( __( '검색 결과가 없습니다. %s', 'wp-job-manager' ), $plural ),
 					'not_found_in_trash' 	=> sprintf( __( 'No %s found in trash', 'wp-job-manager' ), $plural ),
-					'parent' 				=> sprintf( __( 'Parent %s', 'wp-job-manager' ), $singular ),
-					'featured_image'        => __( 'Company Logo', 'woocommerce' ),
+					'parent' 				=> sprintf( __( '상위 항목으로 %s', 'wp-job-manager' ), $singular ),
+					'featured_image'        => __( '하숙 대표 이미지', 'woocommerce' ),
 					'set_featured_image'    => __( 'Set company logo', 'woocommerce' ),
 					'remove_featured_image' => __( 'Remove company logo', 'woocommerce' ),
 					'use_featured_image'    => __( 'Use as company logo', 'woocommerce' ),
@@ -249,7 +249,7 @@ class WP_Job_Manager_Post_Types {
 	public function admin_head() {
 		global $menu;
 
-		$plural     = __( 'Job Listings', 'wp-job-manager' );
+		$plural     = __( '하숙 리스트', 'wp-job-manager' );
 		$count_jobs = wp_count_posts( 'job_listing', 'readable' );
 
 		if ( ! empty( $menu ) && is_array( $menu ) ) {
