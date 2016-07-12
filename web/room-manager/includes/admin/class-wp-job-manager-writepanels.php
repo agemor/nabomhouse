@@ -41,47 +41,47 @@ class WP_Job_Manager_Writepanels {
 				'priority'    => 2
 			),
 			'_company_name' => array(
-				'label'       => __( 'Company Name', 'wp-job-manager' ),
+				'label'       => __( '하숙 이름', 'wp-job-manager' ),
 				'placeholder' => '',
 				'priority'    => 3
 			),
 			'_company_website' => array(
-				'label'       => __( 'Company Website', 'wp-job-manager' ),
+				'label'       => __( '하숙 웹사이트', 'wp-job-manager' ),
 				'placeholder' => '',
 				'priority'    => 4
 			),
 			'_company_tagline' => array(
-				'label'       => __( 'Company Tagline', 'wp-job-manager' ),
+				'label'       => __( '하숙 설명', 'wp-job-manager' ),
 				'placeholder' => __( 'Brief description about the company', 'wp-job-manager' ),
 				'priority'    => 5
 			),
 			'_company_twitter' => array(
-				'label'       => __( 'Company Twitter', 'wp-job-manager' ),
+				'label'       => __( '하숙 SNS', 'wp-job-manager' ),
 				'placeholder' => '@yourcompany',
 				'priority'    => 6
 			),
 			'_company_video' => array(
-				'label'       => __( 'Company Video', 'wp-job-manager' ),
+				'label'       => __( '하숙 소개 동영상', 'wp-job-manager' ),
 				'placeholder' => __( 'URL to the company video', 'wp-job-manager' ),
 				'type'        => 'file',
 				'priority'    => 8
 			),
 			'_filled' => array(
-				'label'       => __( 'Position Filled', 'wp-job-manager' ),
+				'label'       => __( '입실 가능 여부', 'wp-job-manager' ),
 				'type'        => 'checkbox',
 				'priority'    => 9,
-				'description' => __( 'Filled listings will no longer accept applications.', 'wp-job-manager' ),
+				'description' => __( '이 항목에 체크하면 학생을 받을 수 없습니다.', 'wp-job-manager' ),
 			)
 		);
 		if ( $current_user->has_cap( 'manage_job_listings' ) ) {
 			$fields['_featured'] = array(
-				'label'       => __( 'Featured Listing', 'wp-job-manager' ),
+				'label'       => __( '상위 노출', 'wp-job-manager' ),
 				'type'        => 'checkbox',
-				'description' => __( 'Featured listings will be sticky during searches, and can be styled differently.', 'wp-job-manager' ),
+				'description' => __( '검색 시 최상위에 노출되도록 강제합니다.', 'wp-job-manager' ),
 				'priority'    => 10
 			);
 			$fields['_job_expires'] = array(
-				'label'       => __( 'Listing Expiry Date', 'wp-job-manager' ),
+				'label'       => __( '하숙 등록 가능 기간', 'wp-job-manager' ),
 				'priority'    => 11,
 				'classes'     => array( 'job-manager-datepicker' ),
 				'placeholder' => _x( 'yyyy-mm-dd', 'Date format placeholder', 'wp-job-manager' ),
