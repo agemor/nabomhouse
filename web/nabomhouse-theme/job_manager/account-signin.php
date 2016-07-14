@@ -22,13 +22,13 @@
 	$classes = listable_get_login_link_class( 'button' );
 	?>
 	<fieldset>
-		<label><?php _e( 'Have an account?', 'wp-job-manager' ); ?></label>
+		<label><?php _e( '계정이 있으신가요?', 'wp-job-manager' ); ?></label>
 		<div class="field account-sign-in <?php echo ( listable_using_lwa() ) ? 'lwa' : ''; ?>">
-			<a class="<?php echo $classes; ?>" href="<?php echo apply_filters( 'submit_job_form_login_url', $login_url ); ?>"><?php _e( 'Sign in', 'wp-job-manager' ); ?></a>
+			<a class="<?php echo $classes; ?>" href="<?php echo apply_filters( 'submit_job_form_login_url', $login_url ); ?>"><?php _e( '로그인', 'wp-job-manager' ); ?></a>
 
 			<?php if ( $registration_enabled ) : ?>
 
-				<?php printf( __( 'If you don&rsquo;t have an account you can %screate one below by entering your email address/username. Your account details will be confirmed via email.', 'wp-job-manager' ), $account_required ? '' : __( 'optionally', 'wp-job-manager' ) . ' ' ); ?>
+				<?php printf( __( '하세요. 계정이 없으시다면 아래 칸에 이메일 주소를 입력하세요. 해당 메일로 새로운 계정 정보를 보내드립니다.', 'wp-job-manager' ), $account_required ? '' : __( 'optionally', 'wp-job-manager' ) . ' ' ); ?>
 
 			<?php elseif ( $account_required ) : ?>
 
@@ -50,7 +50,7 @@
 		<fieldset>
 			<label><?php _e( 'Your email', 'wp-job-manager' ); ?> <?php echo apply_filters( 'submit_job_form_required_label', ( ! $account_required ) ? ' <small>' . __( '(선택)', 'wp-job-manager' ) . '</small>' : '' ); ?></label>
 			<div class="field">
-				<input type="email" class="input-text" name="create_account_email" id="account_email" placeholder="<?php esc_attr_e( 'you@yourdomain.com', 'wp-job-manager' ); ?>" value="<?php echo empty( $_POST['create_account_email'] ) ? '' : esc_attr( sanitize_text_field( stripslashes( $_POST['create_account_email'] ) ) ); ?>" />
+				<input type="email" class="input-text" name="create_account_email" id="account_email" placeholder="<?php esc_attr_e( '이메일 주소', 'wp-job-manager' ); ?>" value="<?php echo empty( $_POST['create_account_email'] ) ? '' : esc_attr( sanitize_text_field( stripslashes( $_POST['create_account_email'] ) ) ); ?>" />
 			</div>
 		</fieldset>
 		<?php do_action( 'job_manager_register_form' ); ?>
