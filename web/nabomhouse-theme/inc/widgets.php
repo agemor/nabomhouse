@@ -438,7 +438,7 @@ class Listing_Sidebar_Gallery_Widget extends WP_Widget {
 			echo $args['before_widget']; ?>
 
 			<header class="listing-gallery__header">
-				<span class="listing-gallery__title"><?php esc_html_e( '사진 모음', 'listable' ); ?></span>
+				<span class="listing-gallery__title"><?php esc_html_e( '갤러리', 'listable' ); ?></span>
 				<a href="<?php echo wp_get_attachment_url( intval( $photos[0] ) ); ?>" class="listing-gallery__all"><?php echo esc_html__( '모든 사진', 'listable' ) . ' (' . count( $photos ) . ')'; ?></a>
 			</header>
 			<div class="listing-gallery__items  js-widget-gallery">
