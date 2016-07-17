@@ -318,7 +318,7 @@ function listable_add_hours_field( $fields ) {
 	$fields['_company_tagline']['priority'] = 2.1;
 	$fields['_job_location']['priority']    = 2.2;
 	$fields['_company_website']['priority'] = 2.5;
-	$fields['_company_twitter']['priority'] = 2.6;
+	// $fields['_company_twitter']['priority'] = 2.6;
 
 	$fields['_job_hours'] = array(
 		'label'       => esc_html__( 'Hours', 'listable' ),
@@ -375,12 +375,16 @@ function custom_submit_job_form_fields( $fields ) {
 	$fields['job']['job_title']['placeholder'] = esc_html__( '하숙집 이름을 써주세요', 'listable' );
 
 	$fields['company']['company_tagline']['priority']    = 2.1;
+	$fields['company']['company_tagline']['label']       = esc_html__( '하숙 요약', 'listable' );
 	$fields['company']['company_tagline']['placeholder'] = esc_html__( '하숙집 한 줄 요약을 써주세요.', 'listable' );
 	// $fields['company']['company_tagline']['description'] = sprintf( '<span class="description_tooltip left">%s</span>', esc_html__( 'Keep it short and descriptive as it will appear on search results instead of the link description', 'listable' ) );
 
 	$fields['job']['job_description']['priority']    = 2.2;
-//	$fields['job']['job_description']['type']        = 'textarea';
-	$fields['job']['job_description']['placeholder'] = esc_html__( 'An overview of your listing and the things you love about it.', 'listable' );
+	$fields['job']['job_description']['type']        = 'textarea';
+	// annotate above line to change textarea to text-editor
+	$fields['job']['job_description']['label']       = esc_html__( '하숙 설명', 'listable' );
+	$fields['job']['job_description']['placeholder'] = esc_html__( '위치, 성별 구분 여부, 식사 제공 여부, 화장실 개수, 소음 정도, 청결도, 안전 등 하숙 정보와 방 호수 별 면적 등 방 정보를 적어주세요.', 'listable' );
+	$fields['job']['job_description']['description'] = sprintf( '<span class="description_tooltip right">%s</span>', esc_html__( '예시 : nabomhouse.com/listings/sample/', 'listable' ) );
 
 	$fields['job']['job_category']['priority']    = 2.3;
 	$fields['job']['job_category']['placeholder'] = esc_html__( 'Choose one or more categories', 'listable' );
@@ -396,6 +400,7 @@ function custom_submit_job_form_fields( $fields ) {
 	}
 
 	$fields['job']['job_location']['priority']    = 2.5;
+	$fields['job']['job_location']['label']       = esc_html__( '주소', 'listable' );
 	$fields['job']['job_location']['placeholder'] = esc_html__( '주소를 적어주세요', 'listable' );
 	$fields['job']['job_location']['description'] = esc_html__( '', 'listable' );
 	// Leave this blank if the location is not important.
@@ -433,6 +438,7 @@ function custom_submit_job_form_fields( $fields ) {
 	);
 
 	$fields['company']['company_website']['priority']    = 2.9;
+	$fields['company']['company_website']['label']       = esc_html__( '웹사이트', 'listable' );
 	$fields['company']['company_website']['placeholder'] = esc_html__( '웹사이트가 있다면 그 주소를 적어주세요.', 'listable' );
 	// $fields['company']['company_website']['description'] = sprintf( '<span class="description_tooltip left">%s</span>', esc_html__( 'You can add more similar panels to better help the user fill the form', 'listable' ) );
 
@@ -443,6 +449,7 @@ function custom_submit_job_form_fields( $fields ) {
 	unset( $fields['job']['job_type'] );
 	unset( $fields['company']['company_name'] );
 	unset( $fields['job']['application'] );
+	unset( $fields['company']['company_twitter']);
 
 //	$fields['company']['company_name']['priority'] = 1.5;
 
