@@ -289,7 +289,7 @@ function job_manager_get_filtered_links( $args = array() ) {
 
 	$links = apply_filters( 'job_manager_job_filters_showing_jobs_links', array(
 		'reset' => array(
-			'name' => __( 'Reset', 'wp-job-manager' ),
+			'name' => __( '조건 초기화', 'wp-job-manager' ),
 			'url'  => '#'
 		),
 		'rss_link' => array(
