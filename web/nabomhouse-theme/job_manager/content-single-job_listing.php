@@ -51,7 +51,7 @@ if ( class_exists( 'WP_Job_Manager_Claim_Listing' ) ) {
 			<div class="grid__item  column-content  entry-content">
 				<header class="entry-header">
 					<nav class="single-categories-breadcrumb">
-						<a href="<?php echo listable_get_listings_page_url(); ?>"><?php esc_html_e( 'Listings', 'listable' ); ?></a> >>
+						<a href="<?php echo listable_get_listings_page_url(); ?>"><?php esc_html_e( '목록', 'listable' ); ?></a> >>
 						<?php
 						$term_list = wp_get_post_terms(
 							$post->ID,

@@ -55,7 +55,7 @@
 
 		<div class="mobile-buttons">
 			<button class="btn btn--filter"><?php esc_html_e( 'Filter', 'listable' ); ?>
-			<span><?php esc_html_e( 'Listings', 'listable' ); ?></span></button>
+			<span><?php esc_html_e( '목록', 'listable' ); ?></span></button>
 			<button class="btn btn--view btn--view-map"><span><?php esc_html_e( 'Map View', 'listable' ); ?></span>
 			</button>
 			<button class="btn btn--view btn--view-cards">
@@ -150,7 +150,7 @@
 
 	<div class="mobile-buttons">
 		<button class="btn btn--filter"><?php esc_html_e( 'Filter', 'listable' ); ?>
-			<span><?php esc_html_e( 'Listings', 'listable' ); ?></span></button>
+			<span><?php esc_html_e( '목록', 'listable' ); ?></span></button>
 		<button class="btn btn--view btn--view-map"><span><?php esc_html_e( 'Map View', 'listable' ); ?></span>
 		</button>
 		<button class="btn btn--view btn--view-cards">

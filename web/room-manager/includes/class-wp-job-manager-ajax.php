@@ -186,7 +186,7 @@ class WP_Job_Manager_Ajax {
 		}
 
 		$result['showing'] = apply_filters( 'job_manager_get_listings_custom_filter_text', sprintf( __( '모든 연관 %s', 'wp-job-manager' ), implode( ' ', $result['showing'] ) ) );
-
+		
 		// Generate RSS link
 		$result['showing_links'] = job_manager_get_filtered_links( array(
 			'filter_job_types'  => $filter_job_types,
