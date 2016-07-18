@@ -38,14 +38,15 @@ global $post; ?>
 							} ?>
 						</div>
 						<div class="header-content">
-							<h1 class="page-title"><?php the_title(); ?></h1>
-
+							<!-- <h1 class="page-title"><?php the_title(); ?></h1>
 							<div class="entry-subtitle">
 								<?php if ( $post->post_excerpt ) {
 									the_excerpt();
 								} ?>
-							</div>
-
+							</div> -->
+<div class="entry-subtitle">
+							<img src="http://nabomhouse.com/wordpress/wp-content/themes/listable/assets/img/nabom-logo.png"  style="width: 90%; max-width: 300px"/>
+</div>
 							<?php get_template_part( 'job_manager/job-filters-hero' ); ?>
 
 						</div>
