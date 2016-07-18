@@ -149,7 +149,7 @@
 	</div><!-- .search_jobs -->
 
 	<div class="mobile-buttons">
-		<button class="btn btn--filter"><?php esc_html_e( 'Filter', 'listable' ); ?>
+		<button class="btn btn--filter"><?php esc_html_e( '조건', 'listable' ); ?>
 			<span><?php esc_html_e( '목록', 'listable' ); ?></span></button>
 		<button class="btn btn--view btn--view-map"><span><?php esc_html_e( '지도 보기', 'listable' ); ?></span>
 		</button>
