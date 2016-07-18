@@ -56,10 +56,10 @@
 		<div class="mobile-buttons">
 			<button class="btn btn--filter"><?php esc_html_e( 'Filter', 'listable' ); ?>
 			<span><?php esc_html_e( '목록', 'listable' ); ?></span></button>
-			<button class="btn btn--view btn--view-map"><span><?php esc_html_e( 'Map View', 'listable' ); ?></span>
+			<button class="btn btn--view btn--view-map"><span><?php esc_html_e( '지도 보기', 'listable' ); ?></span>
 			</button>
 			<button class="btn btn--view btn--view-cards">
-			<span><?php esc_html_e( 'Cards View', 'listable' ); ?> </span></button>
+			<span><?php esc_html_e( '목록 보기', 'listable' ); ?> </span></button>
 		</div>
 	</div><!-- .job-filters -->
 	<?php if ( ! empty( $hidden_facets ) ) { ?>
@@ -151,10 +151,10 @@
 	<div class="mobile-buttons">
 		<button class="btn btn--filter"><?php esc_html_e( 'Filter', 'listable' ); ?>
 			<span><?php esc_html_e( '목록', 'listable' ); ?></span></button>
-		<button class="btn btn--view btn--view-map"><span><?php esc_html_e( 'Map View', 'listable' ); ?></span>
+		<button class="btn btn--view btn--view-map"><span><?php esc_html_e( '지도 보기', 'listable' ); ?></span>
 		</button>
 		<button class="btn btn--view btn--view-cards">
-			<span><?php esc_html_e( 'Cards View', 'listable' ); ?> </span></button>
+			<span><?php esc_html_e( '카드 보기', 'listable' ); ?> </span></button>
 	</div>
 
 	<?php do_action( 'job_manager_job_filters_end', $atts ); ?>
