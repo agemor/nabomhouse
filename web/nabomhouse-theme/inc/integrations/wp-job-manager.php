@@ -383,7 +383,7 @@ function custom_submit_job_form_fields( $fields ) {
 	$fields['job']['job_description']['type']        = 'textarea';
 	// annotate above line to change textarea to text-editor
 	$fields['job']['job_description']['label']       = esc_html__( '하숙 설명', 'listable' );
-	$fields['job']['job_description']['placeholder'] = esc_html__( '위치, 성별 구분 여부, 식사 제공 여부, 화장실 개수, 소음 정도, 청결도, 안전 등 하숙 정보와 방 호수 별 면적 등 방 정보를 적어주세요.', 'listable' );
+	$fields['job']['job_description']['value'] = '위치 : &#10;성별 구분 여부 : &#10;식사 제공 여부 : &#10;화장실 개수 : &#10;소음 정도 : &#10;청결도 : &#10;안전 : &#10;이 외 다른 하숙 정보들과 방 호수 별 면적 등 방 정보들을 아래에 자유롭게 적어주세요.';
 	$fields['job']['job_description']['description'] = sprintf( '<span class="description_tooltip right">%s</span>', esc_html__( '예시 : nabomhouse.com/listings/sample/', 'listable' ) );
 
 	$fields['job']['job_category']['priority']    = 2.3;
