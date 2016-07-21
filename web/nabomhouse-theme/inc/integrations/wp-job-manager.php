@@ -440,16 +440,20 @@ function custom_submit_job_form_fields( $fields ) {
 	$fields['company']['company_website']['priority']    = 2.9;
 	$fields['company']['company_website']['label']       = esc_html__( '웹사이트', 'listable' );
 	$fields['company']['company_website']['placeholder'] = esc_html__( '웹사이트가 있다면 그 주소를 적어주세요.', 'listable' );
-	// $fields['company']['company_website']['description'] = sprintf( '<span class="description_tooltip left">%s</span>', esc_html__( 'You can add more similar panels to better help the user fill the form', 'listable' ) );
+	$fields['company']['company_website']['description'] = sprintf( '<span class="description_tooltip left">%s</span>', esc_html__( '본 신청서 양식은 즉시 게시되지 않습니다. 운영진의 사전 답사 및 진위 확인 후 홈페이지에 게시됩니다. 7일 이내 연락을 드리겠습니다.', 'listable' ) );
 
-
+	// use company_twitter for caution
+	$fields['company']['company_twitter']['priority']    = 3.0;
+	$fields['company']['company_twitter']['type']        = 'textarea';
+	$fields['company']['company_twitter']['label']       = esc_html__( '주의사항', 'listable' );
+	$fields['company']['company_twitter']['placeholder'] = esc_html__( '본 신청서 양식은 즉시 게시되지 않습니다.&#10;운영진의 사전 답사 및 진위 확인 후 홈페이지에 게시됩니다.&#10;7일 이내 연락을 드리겠습니다.', 'listable' );
 
 	// temporary unsets
 	unset( $fields['company']['company_video'] );
 	unset( $fields['job']['job_type'] );
 	unset( $fields['company']['company_name'] );
 	unset( $fields['job']['application'] );
-	unset( $fields['company']['company_twitter']);
+	// unset( $fields['company']['company_twitter']);
 
 //	$fields['company']['company_name']['priority'] = 1.5;
 
