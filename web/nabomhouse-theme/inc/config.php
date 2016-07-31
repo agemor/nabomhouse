@@ -2055,9 +2055,13 @@ if ( ! function_exists( 'listable_customify_darker_callback' ) ) {
 
 function timber_add_customify_font_std_font( $fonts ) {
 	$new_fonts = array();
-	$new_fonts['Hanken'] = array(
-		'font_family' => 'Hanken',
-		'variants'    => array( '400', '700' )
+	// $new_fonts['Hanken'] = array(
+	// 	'font_family' => 'Hanken',
+	// 	'variants'    => array( '400', '700' )
+	// );
+
+	$new_fonts['Jua'] = array(
+		'font_family' => 'Jua'
 	);
 
 	return $new_fonts + $fonts;

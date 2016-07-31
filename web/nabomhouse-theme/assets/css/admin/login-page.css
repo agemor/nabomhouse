@@ -35,6 +35,12 @@
   src: url("../../fonts/hanken/hanken-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/hanken/hanken-light-webfont.woff2") format("woff2"), url("../../fonts/hanken/hanken-light-webfont.woff") format("woff"), url("../../fonts/hanken/hanken-light-webfont.ttf") format("truetype"), url("../../fonts/hanken/hanken-light-webfont.svg#Hanken") format("svg");
   font-weight: 300; }
 
+@font-face {
+  font-family: 'Jua';
+  src: url("assets/fonts/jua/jua.eot");
+  src: url("assets/fonts/jua/jua.woff") format("woff");
+}
+
 .login label, #login #nav a, #login #backtoblog a, #login label {
   font-family: Source Sans Pro, Helvetica, sans-serif; }
 

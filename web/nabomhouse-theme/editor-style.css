@@ -418,6 +418,12 @@ h1 {
 	src: url("assets/fonts/hanken/hanken-light-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/hanken/hanken-light-webfont.woff2") format("woff2"), url("assets/fonts/hanken/hanken-light-webfont.woff") format("woff"), url("assets/fonts/hanken/hanken-light-webfont.ttf") format("truetype"), url("assets/fonts/hanken/hanken-light-webfont.svg#Hanken") format("svg");
 }
 
+@font-face {
+	font-family: "Jua";
+	src: url("assets/fonts/jua/jua.eot");
+	src: url("assets/fonts/jua/jua.woff") format("woff");
+}
+
 html,
 * blockquote cite {
 	font-family: Source Sans Pro, Helvetica, sans-serif;
