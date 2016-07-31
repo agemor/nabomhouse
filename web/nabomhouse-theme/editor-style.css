@@ -424,6 +424,12 @@ h1 {
 	src: url("assets/fonts/jua/jua.woff") format("woff");
 }
 
+@font-face {
+	font-family: "Namsan";
+	src: url("assets/fonts/namsan/SeoulNamsanM.eot");
+	src: url("assets/fonts/namsan/SeoulNamsanM.woff") format("woff");
+}
+
 html,
 * blockquote cite {
 	font-family: Source Sans Pro, Helvetica, sans-serif;

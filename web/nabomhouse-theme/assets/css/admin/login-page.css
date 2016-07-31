@@ -41,6 +41,12 @@
   src: url("assets/fonts/jua/jua.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Namsan";
+  src: url("assets/fonts/namsan/SeoulNamsanM.eot");
+  src: url("assets/fonts/namsan/SeoulNamsanM.woff") format("woff");
+}
+
 .login label, #login #nav a, #login #backtoblog a, #login label {
   font-family: Source Sans Pro, Helvetica, sans-serif; }
 
