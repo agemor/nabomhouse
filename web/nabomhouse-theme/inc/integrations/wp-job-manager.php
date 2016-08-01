@@ -383,7 +383,7 @@ function custom_submit_job_form_fields( $fields ) {
 	$fields['job']['job_description']['type']        = 'textarea';
 	// annotate above line to change textarea to text-editor
 	$fields['job']['job_description']['label']       = esc_html__( '하숙 설명', 'listable' );
-	$fields['job']['job_description']['value'] = '위치 : &#10;성별 구분 여부 : &#10;식사 제공 여부 : &#10;냉장고와 주방 위치 : &#10;화장실 개수 : &#10;세탁기 개수 및 세탁실 위치 : &#10;청결도 : &#10;안전 : &#10;주인집 동거 여부: &#10;전화번호 : &#10;기존 홍보 웹사이트 : &#10;이 외 다른 하숙 정보들과 방 호수 별 면적 등 방 정보들을 아래에 자유롭게 적어주세요.&#10;&#10;이하는 방별 설명 항목입니다. 방이 여러 개라면 각각 작성해주세요.&#10;방 크기 : &#10;방 종류(하숙, 원룸형 하숙, 잠만 자는 곳 등) : &#10;소음 정도 : &#10;구비되어 있는 물품 : &#10;보증금과 월세 : ';
+	$fields['job']['job_description']['value'] = '(우측 예시 링크를 참고하세요)&#10;&#10;성별 구분 여부 : &#10;식사 제공 여부 : &#10;냉장고와 주방 위치 : &#10;화장실 개수 : &#10;세탁기 개수 및 세탁실 위치 : &#10;청결도 : &#10;안전 : &#10;주인집 동거 여부: &#10;이 외 다른 하숙 정보들과 방 호수 별 면적 등 방 정보들을 아래에 자유롭게 적어주세요.&#10;&#10;이하는 방별 설명 항목입니다. 방이 여러 개라면 각각 작성해주세요.&#10;방 크기 : &#10;방 종류(하숙, 원룸형 하숙, 잠만 자는 곳 등) : &#10;소음 정도(우측 예시 링크를 참고하세요) : &#10;구비되어 있는 물품 : &#10;보증금과 월세 : ';
 	$fields['job']['job_description']['description'] = sprintf( '<span class="description_tooltip right">%s</span>', esc_html__( '예시 : nabomhouse.com/listings/sample/', 'listable' ) );
 
 	$fields['job']['job_category']['priority']    = 2.3;
