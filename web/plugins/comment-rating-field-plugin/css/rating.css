@@ -10,7 +10,8 @@ div.star-rating-readonly a{cursor:default !important}
 div.star-rating{background:transparent!important;overflow:hidden!important}
 
 /* Rating */
-div.rating { width: 80px; height: 16px; margin: 5px 0 10px 0; }
+/*div.rating { width: 80px; height: 16px; margin: 5px 0 10px 0; }
+*/
 div.crfp-rating { width: 80px; height: 16px; background: url(../images/star.gif) 0 -32px repeat-x; text-indent: -9999px; overflow: hidden; }
 div.crfp-rating-5 { width: 80px !important; }
 div.crfp-rating-4 { width: 64px !important; }
