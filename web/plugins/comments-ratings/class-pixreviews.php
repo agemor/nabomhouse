@@ -132,11 +132,11 @@ class PixReviewsPlugin {
 
 	protected function set_rating_values() {
 		$ratings = array(
-			esc_html__( 'Terrible', 'comments-ratings' ),
-			esc_html__( 'Poor', 'comments-ratings' ),
-			esc_html__( 'Average', 'comments-ratings' ),
-			esc_html__( 'Very Good', 'comments-ratings' ),
-			esc_html__( 'Exceptional', 'comments-ratings' ),
+			esc_html__( '이건 아니에요', 'comments-ratings' ),
+			esc_html__( '별로에요', 'comments-ratings' ),
+			esc_html__( '그냥 그래요', 'comments-ratings' ),
+			esc_html__( '좋아요', 'comments-ratings' ),
+			esc_html__( '최고에요', 'comments-ratings' ),
 		);
 
 		return $ratings;
