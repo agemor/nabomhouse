@@ -46,6 +46,7 @@ global $post; ?>
 							</div> -->
 <div class="entry-subtitle">
 							<img src="http://nabomhouse.com/wordpress/wp-content/themes/listable/assets/img/nabom-logo.png"  style="width: 90%; max-width: 300px"/>
+							<p style="font-size: 0.8em; margin-top: 10px;">나봄: 1. <strong>봄</strong>에 태어나다&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. 나와 맞는 신촌 하숙을 만<strong>나봄</strong></p>
 </div>
 							<?php get_template_part( 'job_manager/job-filters-hero' ); ?>
 
