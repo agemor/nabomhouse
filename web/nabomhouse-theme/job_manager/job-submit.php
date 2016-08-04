@@ -14,7 +14,7 @@ global $job_manager;
 
 	<?php if ( apply_filters( 'submit_job_form_show_signin', true ) ) : ?>
 
-		<?php get_job_manager_template( 'account-signin.php' ); ?>
+		<!-- <?php get_job_manager_template( 'account-signin.php' ); ?> -->
 
 	<?php endif; ?>
 
