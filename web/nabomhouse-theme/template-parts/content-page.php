@@ -15,7 +15,7 @@
 			$image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'listable-featured-image' ); ?>
 			<header class="page-header has-featured-image">
 				<div class="page-header-background" style="background-image: url('<?php echo listable_get_inline_background_image( $image[0] ); ?>')"></div>
-				<h1 class="page-title"><?php the_title(); ?></h1>
+				<!-- <h1 class="page-title"><?php the_title(); ?></h1> -->
 				<span class="entry-subtitle"><?php echo get_the_excerpt(); ?></span>
 			</header>
 		<?php else:
@@ -52,4 +52,3 @@
 		?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
-
