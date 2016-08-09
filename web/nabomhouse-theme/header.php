@@ -14,6 +14,19 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+
+<title>나봄하우스</title>
+
+<meta name="description" content="모든 신촌-이대 하숙을 만나봄">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="나봄하우스">
+<meta property="og:description" content="모든 신촌-이대 하숙을 만나봄">
+<meta property="og:image" content="http://nabomhouse.com/wordpress/wp-content/themes/listable/assets/img/nabom-logo.png">
+<meta property="og:url" content="http://nabomhouse.com">
+
+
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
