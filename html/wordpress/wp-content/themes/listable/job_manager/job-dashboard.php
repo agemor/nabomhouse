@@ -1,5 +1,5 @@
 <div id="job-manager-job-dashboard">
-	<p><?php _e( 'Your listings are shown in the table below.', 'wp-job-manager' ); ?></p>
+	<p><?php _e( '회원님이 등록한 하숙의 목록입니다.', 'wp-job-manager' ); ?></p>
 	<table class="job-manager-jobs">
 		<thead>
 			<tr>
