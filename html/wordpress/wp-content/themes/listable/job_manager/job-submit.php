@@ -36,7 +36,7 @@ global $job_manager;
 					echo $field['label'];
 				}
 
-				echo apply_filters( 'submit_job_form_required_label', (isset($field['required'])&&$field['required']) ? '' : ' <small>' . esc_html__( '(선택)', 'listable' ) . '</small>', $field );
+				// echo apply_filters( 'submit_job_form_required_label', (isset($field['required'])&&$field['required']) ? '' : ' <small>' . esc_html__( '(선택)', 'listable' ) . '</small>', $field );
 				?>
 			</label>
 			<div class="field <?php echo ( isset($field['required']) && $field['required'] ) ? 'required-field' : ''; ?>">
