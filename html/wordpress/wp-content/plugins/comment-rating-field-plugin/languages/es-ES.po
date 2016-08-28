@@ -1,0 +1,237 @@
+# Copyright (C) 2014 Comment Rating Field Plugin
+# This file is distributed under the same license as the Comment Rating Field Plugin package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Comment Rating Field Plugin 2.0.5\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/comment-rating-field-plugin\n"
+"POT-Creation-Date: 2014-03-01 18:33:46+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-01-05 11:59-0400\n"
+"Last-Translator: e-rgonomy.com <info@e-rgonomy.com>\n"
+"Language-Team: e-rgonomy.com <info@e-rgonomy.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es_ES\n"
+"X-Generator: Poedit 1.7.1\n"
+
+#: _modules/dashboard/views/dashboard-nodata.php:14
+msgid "Thanks for using our plugins - why not check out some of our other amazing Premium WordPress Plugins?"
+msgstr "Gracias por usar nuestro plugin. ¿Porque no echa un vistazxo a otros plugins profesionales para Wordpress?"
+
+#: _modules/dashboard/views/dashboard-nodata.php:15
+#: _modules/dashboard/views/dashboard.php:40
+msgid "Visit WP Cube"
+msgstr "Visitar WP Cube"
+
+#: _modules/dashboard/views/dashboard.php:18
+msgid "Thanks for using our plugins - why not check out some of our other amazing Premium WordPress Plugins below?"
+msgstr "Gracias por usar nuestro plugin. ¿Porque no echa un vistazxo a otros plugins profesionales para Wordpress que se muestran a continuación?"
+
+#: _modules/dashboard/views/dashboard.php:33
+msgid "Visit the WP Cube Web Site"
+msgstr "Visitar la web de WP Cube"
+
+#: _modules/dashboard/views/dashboard.php:39
+msgid "Why not visit"
+msgstr "¿Porque no visita "
+
+#: _modules/dashboard/views/dashboard.php:39
+msgid "and check out some of our other amazing Premium WordPress Plugins?"
+msgstr "para conocer otros fantásticos plugins profesionales para Wordpress?"
+
+#: _modules/dashboard/views/footer-upgrade.php:5
+msgid "Upgrade to Pro"
+msgstr "Actualizar a PRO"
+
+#: _modules/dashboard/views/footer-upgrade.php:16
+#: _modules/dashboard/views/sidebar-pro.php:23
+#: _modules/dashboard/views/sidebar-pro.php:28
+msgid "Support"
+msgstr "Soporte"
+
+#: _modules/dashboard/views/footer-upgrade.php:16
+msgid "Access to one on one email support"
+msgstr "Acceder a soporte prioritario por e-mail"
+
+#: _modules/dashboard/views/footer-upgrade.php:17
+#: _modules/dashboard/views/sidebar-pro.php:27
+msgid "Documentation"
+msgstr "Documentación"
+
+#: _modules/dashboard/views/footer-upgrade.php:17
+msgid "Detailed documentation on how to install and configure the plugin"
+msgstr "Documentación detalladas para saber como instalar y configurar el plugin"
+
+#: _modules/dashboard/views/footer-upgrade.php:18
+msgid "Updates"
+msgstr "Actualizaciones"
+
+#: _modules/dashboard/views/footer-upgrade.php:18
+msgid "Receive one click update notifications, right within your WordPress Adminstration panel"
+msgstr "Reciba notificaciones de actualización con un clic, directamente en el panel de control de Wordpress"
+
+#: _modules/dashboard/views/footer-upgrade.php:19
+msgid "Seamless Upgrade"
+msgstr "Actualizaciones rápidas"
+
+#: _modules/dashboard/views/footer-upgrade.php:19
+msgid "Retain all current settings when upgrading to Pro"
+msgstr "Mantener las opciones actuales al actualizar a la versión Pro"
+
+#: _modules/dashboard/views/footer-upgrade.php:25
+msgid "Upgrade Now"
+msgstr "Actualizar ahora"
+
+#: _modules/dashboard/views/sidebar-donate.php:10
+#: _modules/dashboard/views/sidebar-pro.php:10
+msgid "About"
+msgstr "Sobre"
+
+#: _modules/dashboard/views/sidebar-donate.php:13
+msgid "Found this plugin useful? Donations to help with support and development are appreciated."
+msgstr "¿Ha encontrado útil este plugin? Las donaciones nos ayudan con el desarrollo y soporte y son muy apreciadas."
+
+#: _modules/dashboard/views/sidebar-donate.php:30
+msgid "Donate Now"
+msgstr "Hacer un donativo"
+
+#: _modules/dashboard/views/sidebar-donate.php:40
+#: _modules/dashboard/views/sidebar-upgrade.php:10
+msgid "Keep Updated"
+msgstr "Mantente actualizado"
+
+#: _modules/dashboard/views/sidebar-donate.php:43
+#: _modules/dashboard/views/sidebar-upgrade.php:13
+msgid "Subscribe to the newsletter and receive updates on our WordPress Plugins"
+msgstr "Suscribirse al boletín para recibir información sobre sus plugins de Wordpress"
+
+#: _modules/dashboard/views/sidebar-donate.php:49
+#: _modules/dashboard/views/sidebar-upgrade.php:19
+msgid "Email"
+msgstr "Email"
+
+#: _modules/dashboard/views/sidebar-donate.php:55
+#: _modules/dashboard/views/sidebar-upgrade.php:25
+msgid "Subscribe"
+msgstr "Suscribirse"
+
+#: _modules/dashboard/views/sidebar-pro.php:14
+msgid "Version"
+msgstr "Versión"
+
+#: comment-rating-field-plugin.php:52
+msgid "Custom Post Types"
+msgstr "Tipos de entrada personalizada"
+
+#: comment-rating-field-plugin.php:52
+msgid "Support for rating display and functionality on ANY Custom Post Types and their Taxonomies."
+msgstr "Soporte para mostrar calificaciones en CUALQUIER tipo de entrada personalizada y taxonomías."
+
+#: comment-rating-field-plugin.php:53
+msgid "Multiple Rating Fields"
+msgstr "Campos de votación múltiple"
+
+#: comment-rating-field-plugin.php:53
+msgid "Create, edit and delete an unlimited number of rating fields. Each field can be targeted to display on a comment form for a specific Custom Post Type and/or Taxonomy."
+msgstr "Crea, edita y borra un número ilimitado de campos de votación. Cada campo puede ser integrado para mostrarse en un formulario de comentario para un tipo de entrada personalizada y/o taxonomía."
+
+#: comment-rating-field-plugin.php:54
+msgid "Widgets"
+msgstr "Widgets"
+
+#: comment-rating-field-plugin.php:54
+msgid "List the Highest Average Rating Posts within your sidebars."
+msgstr "Mostrar lista con las entradas más valoradas en las barras laterales."
+
+#: comment-rating-field-plugin.php:55
+msgid "Shortcodes"
+msgstr "Shortcodes"
+
+#: comment-rating-field-plugin.php:55
+msgid "Use a shortcode to display the Average Rating anywhere within your content."
+msgstr "Usar un shortcode para mostrar el promedio de calificación en el área de contenido."
+
+#: comment-rating-field-plugin.php:56
+msgid "Display"
+msgstr "Mostrar"
+
+#: comment-rating-field-plugin.php:56
+msgid "Enhanced display options, including to display the average rating on excerpts, content, comments; position the average rating and display a rating breakdown."
+msgstr "Las opciones avanzadas incluyen visualización de promedios en extractos, contenidos, comentarios; coloque el promedio y muestre sus calificaciones."
+
+#: comment-rating-field-plugin.php:112
+msgid "Settings Updated."
+msgstr "Opciones actualizadas."
+
+#: views/settings.php:3
+msgid "Settings"
+msgstr "Opciones"
+
+#: views/settings.php:27
+msgid "Display Settings"
+msgstr "Mostrar opciones"
+
+#: views/settings.php:31
+msgid "Enable on Pages"
+msgstr "Habilitar en páginas"
+
+#: views/settings.php:38
+msgid "Enable on Posts"
+msgstr "Habilitar en entradas"
+
+#: views/settings.php:45
+msgid "Enable on Categories"
+msgstr "Habilitar en categorías"
+
+#: views/settings.php:60
+msgid "Displays ratings and the rating field on Posts with comments enabled that are assigned to the selected categories."
+msgstr "Muestra calificaciones y campo para votar en entradas con comentarios en las categorías seleccionadas."
+
+#: views/settings.php:66
+msgid "Display Average"
+msgstr "Mostrar promedio"
+
+#: views/settings.php:70
+msgid "Displays the average rating based on the average of all ratings for the given Page or Post."
+msgstr "Muestra el promedio de calificaciones basado en todos los votos recibidos en página o entrada."
+
+#: views/settings.php:76
+msgid "Average Rating Text"
+msgstr "Texto de Promedio de calificación"
+
+#: views/settings.php:80
+msgid "If Display Average Rating above is selected, optionally define text to appear before the average rating stars are displayed."
+msgstr "Si la opción de mostar promedio está habilitada, se puede establecer un texto para que aparezca antes de las estrellas."
+
+#: views/settings.php:86
+msgid "Rating Field Label"
+msgstr "Etiqueta del campo Calificación"
+
+#: views/settings.php:90
+msgid "The text to display for the rating form field label. If blank, no label is displayed."
+msgstr "El texto de la etiqueta del campo de votación. Si se deja en blanco, la etiqueta no se mostrará."
+
+#: views/settings.php:96
+msgid "Save"
+msgstr "Guardar"
+
+#. Plugin Name of the plugin/theme
+msgid "Comment Rating Field Plugin"
+msgstr "Comment Rating Field Plugin"
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.wpcube.co.uk/plugins/comment-rating-field-pro-plugin"
+msgstr "http://www.wpcube.co.uk/plugins/comment-rating-field-pro-plugin"
+
+#. Description of the plugin/theme
+msgid "Adds a 5 star rating field to the comments form in WordPress."
+msgstr "Calificar con 5 estrellas en el formulario de comentarios de Wordpress."
+
+#. Author of the plugin/theme
+msgid "WP Cube"
+msgstr "WP Cube"
+
+#. Author URI of the plugin/theme
+msgid "http://www.wpcube.co.uk"
+msgstr "http://www.wpcube.co.uk"

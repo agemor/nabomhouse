@@ -1,0 +1,342 @@
+# Copyright (C) 2015 Comment Rating Field Plugin
+# This file is distributed under the same license as the Comment Rating Field Plugin package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Comment Rating Field Plugin 2.0.9\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/comment-rating-"
+"field-plugin\n"
+"POT-Creation-Date: 2015-09-09 16:52:31+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: _modules/dashboard/views/dashboard-nodata.php:14
+msgid ""
+"Thanks for using our plugins - why not check out some of our other amazing "
+"Premium WordPress Plugins?"
+msgstr ""
+
+#: _modules/dashboard/views/dashboard-nodata.php:15
+#: _modules/dashboard/views/dashboard.php:40
+msgid "Visit WP Cube"
+msgstr ""
+
+#: _modules/dashboard/views/dashboard.php:18
+msgid ""
+"Thanks for using our plugins - why not check out some of our other amazing "
+"Premium WordPress Plugins below?"
+msgstr ""
+
+#: _modules/dashboard/views/dashboard.php:33
+msgid "Visit the WP Cube Web Site"
+msgstr ""
+
+#: _modules/dashboard/views/dashboard.php:39
+msgid "Why not visit"
+msgstr ""
+
+#: _modules/dashboard/views/dashboard.php:39
+msgid "and check out some of our other amazing Premium WordPress Plugins?"
+msgstr ""
+
+#: _modules/dashboard/views/footer-upgrade.php:5
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: _modules/dashboard/views/footer-upgrade.php:16
+#: _modules/dashboard/views/sidebar-pro.php:23
+#: _modules/dashboard/views/sidebar-pro.php:30 admin/settings.php:75
+msgid "Support"
+msgstr ""
+
+#: _modules/dashboard/views/footer-upgrade.php:16
+msgid "Access to one on one email support"
+msgstr ""
+
+#: _modules/dashboard/views/footer-upgrade.php:17
+#: _modules/dashboard/views/sidebar-pro.php:28
+msgid "Documentation"
+msgstr ""
+
+#: _modules/dashboard/views/footer-upgrade.php:17
+msgid "Detailed documentation on how to install and configure the plugin"
+msgstr ""
+
+#: _modules/dashboard/views/footer-upgrade.php:18
+msgid "Updates"
+msgstr ""
+
+#: _modules/dashboard/views/footer-upgrade.php:18
+msgid ""
+"Receive one click update notifications, right within your WordPress "
+"Adminstration panel"
+msgstr ""
+
+#: _modules/dashboard/views/footer-upgrade.php:19 admin/settings.php:81
+msgid "Seamless Upgrade"
+msgstr ""
+
+#: _modules/dashboard/views/footer-upgrade.php:19
+msgid "Retain all current settings when upgrading to Pro"
+msgstr ""
+
+#: _modules/dashboard/views/footer-upgrade.php:25
+msgid "Upgrade Now"
+msgstr ""
+
+#: _modules/dashboard/views/sidebar-donate.php:10
+#: _modules/dashboard/views/sidebar-pro.php:10
+msgid "About"
+msgstr ""
+
+#: _modules/dashboard/views/sidebar-donate.php:13
+msgid ""
+"Found this plugin useful? Donations to help with support and development are "
+"appreciated."
+msgstr ""
+
+#: _modules/dashboard/views/sidebar-donate.php:30
+msgid "Donate Now"
+msgstr ""
+
+#: _modules/dashboard/views/sidebar-donate.php:40
+#: _modules/dashboard/views/sidebar-upgrade.php:10
+msgid "Keep Updated"
+msgstr ""
+
+#: _modules/dashboard/views/sidebar-donate.php:43
+#: _modules/dashboard/views/sidebar-upgrade.php:13
+msgid ""
+"Subscribe to the newsletter and receive updates on our WordPress Plugins"
+msgstr ""
+
+#: _modules/dashboard/views/sidebar-donate.php:49
+#: _modules/dashboard/views/sidebar-upgrade.php:19
+msgid "Email"
+msgstr ""
+
+#: _modules/dashboard/views/sidebar-donate.php:55
+#: _modules/dashboard/views/sidebar-upgrade.php:25
+msgid "Subscribe"
+msgstr ""
+
+#: _modules/dashboard/views/sidebar-pro.php:14
+msgid "Version"
+msgstr ""
+
+#: admin/settings.php:3 views/settings.php:3
+msgid "Settings"
+msgstr ""
+
+#: admin/settings.php:26 views/settings.php:27
+msgid "Display Settings"
+msgstr ""
+
+#: admin/settings.php:29 views/settings.php:31
+msgid "Enable on Pages"
+msgstr ""
+
+#: admin/settings.php:32
+msgid "Displays ratings and the rating field on Pages with comments enabled."
+msgstr ""
+
+#: admin/settings.php:34 admin/settings.php:36
+msgid "Enable on Post Categories"
+msgstr ""
+
+#: admin/settings.php:47 views/settings.php:60
+msgid ""
+"Displays ratings and the rating field on Posts with comments enabled that "
+"are assigned to the selected categories."
+msgstr ""
+
+#: admin/settings.php:50 admin/settings.php:80
+msgid "Display Average Rating"
+msgstr ""
+
+#: admin/settings.php:53 views/settings.php:70
+msgid ""
+"Displays the average rating based on the average of all ratings for the "
+"given Page or Post."
+msgstr ""
+
+#: admin/settings.php:56 views/settings.php:76
+msgid "Average Rating Text"
+msgstr ""
+
+#: admin/settings.php:59 views/settings.php:80
+msgid ""
+"If Display Average Rating above is selected, optionally define text to "
+"appear before the average rating stars are displayed."
+msgstr ""
+
+#: admin/settings.php:62 views/settings.php:86
+msgid "Rating Field Label"
+msgstr ""
+
+#: admin/settings.php:65 views/settings.php:90
+msgid ""
+"The text to display for the rating form field label. If blank, no label is "
+"displayed."
+msgstr ""
+
+#: admin/settings.php:71
+msgid "Pro Settings and Support"
+msgstr ""
+
+#: admin/settings.php:75
+msgid "Access to support ticket system and knowledgebase."
+msgstr ""
+
+#: admin/settings.php:76 comment-rating-field-plugin.php:54
+msgid "Custom Post Types"
+msgstr ""
+
+#: admin/settings.php:76 comment-rating-field-plugin.php:54
+msgid ""
+"Support for rating display and functionality on ANY Custom Post Types and "
+"their Taxonomies."
+msgstr ""
+
+#: admin/settings.php:77 comment-rating-field-plugin.php:56
+msgid "Widgets"
+msgstr ""
+
+#: admin/settings.php:77 comment-rating-field-plugin.php:56
+msgid "List the Highest Average Rating Posts within your sidebars."
+msgstr ""
+
+#: admin/settings.php:78 comment-rating-field-plugin.php:57
+msgid "Shortcodes"
+msgstr ""
+
+#: admin/settings.php:78 comment-rating-field-plugin.php:57
+msgid ""
+"Use a shortcode to display the Average Rating anywhere within your content."
+msgstr ""
+
+#: admin/settings.php:79
+msgid "Rating Field"
+msgstr ""
+
+#: admin/settings.php:79
+msgid ""
+"Make rating field a required field, and choose to display it above or below "
+"the other fields on the comments form."
+msgstr ""
+
+#: admin/settings.php:80
+msgid ""
+"Choose to display average rating above or below the content and/or excerpts."
+msgstr ""
+
+#: admin/settings.php:81
+msgid "Retain all current settings and ratings when upgrading to Pro."
+msgstr ""
+
+#: admin/settings.php:89 views/settings.php:96
+msgid "Save"
+msgstr ""
+
+#: comment-rating-field-plugin.php:55
+msgid "Multiple Rating Fields and Groups"
+msgstr ""
+
+#: comment-rating-field-plugin.php:55
+msgid ""
+"Create, edit and delete an unlimited number of rating field groups. Each "
+"group can have unlimted rating fields, and be targeted to display on a "
+"comment form for a specific Custom Post Type and/or Taxonomy."
+msgstr ""
+
+#: comment-rating-field-plugin.php:58
+msgid "Display"
+msgstr ""
+
+#: comment-rating-field-plugin.php:58
+msgid ""
+"Enhanced display options, including to display the average rating on "
+"excerpts, content, comments; position the average rating and display a "
+"rating breakdown."
+msgstr ""
+
+#: comment-rating-field-plugin.php:59
+msgid "Colors"
+msgstr ""
+
+#: comment-rating-field-plugin.php:59
+msgid "Define the colours for stars per rating group"
+msgstr ""
+
+#: comment-rating-field-plugin.php:60
+msgid "Amazon Bar Chart Rating Breakdown"
+msgstr ""
+
+#: comment-rating-field-plugin.php:60
+msgid "Choose to output a breakdown of ratings in the same style as Amazon"
+msgstr ""
+
+#: comment-rating-field-plugin.php:61
+msgid "Limit Ratings"
+msgstr ""
+
+#: comment-rating-field-plugin.php:61
+msgid "Prevent reviewers leaving more than one comment rating per Post"
+msgstr ""
+
+#: comment-rating-field-plugin.php:62
+msgid "Rich Snippets"
+msgstr ""
+
+#: comment-rating-field-plugin.php:62
+msgid "Choose a schema (e.g. Review, Product, Place, Person) for your Ratings"
+msgstr ""
+
+#: comment-rating-field-plugin.php:63
+msgid "WooCommerce Support"
+msgstr ""
+
+#: comment-rating-field-plugin.php:63
+msgid ""
+"Replace WooCommerce's built in reviewing system with a multi field, enhanced "
+"one"
+msgstr ""
+
+#: comment-rating-field-plugin.php:111
+msgid "Settings Updated."
+msgstr ""
+
+#: views/settings.php:38
+msgid "Enable on Posts"
+msgstr ""
+
+#: views/settings.php:45
+msgid "Enable on Categories"
+msgstr ""
+
+#: views/settings.php:66
+msgid "Display Average"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Comment Rating Field Plugin"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.wpcube.co.uk/plugins/comment-rating-field-pro-plugin"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Adds a 5 star rating field to the comments form in WordPress."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "WP Cube"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.wpcube.co.uk"
+msgstr ""
