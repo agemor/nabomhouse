@@ -1,4 +1,4 @@
-Customify [![Build Status](https://travis-ci.org/pixelgrade/customify.svg?branch=dev)](https://travis-ci.org/pixelgrade/customify)
+Customify [![Build Status](https://travis-ci.org/pixelgrade/customify.svg?branch=wporg)](https://travis-ci.org/pixelgrade/customify)
 ========
 **A Theme Customizer Booster**
 
@@ -60,8 +60,6 @@ function make_this_function_name_unique( $config ) {
 	// when working with filters always return filtered value
 	return $config;
 }
-
-
 ```
 
 The Customify plugin also create's its own defaults this way. You can see that in `customify/customify_config.php`
@@ -72,6 +70,27 @@ Personally I like to simply copy this file in my child theme and include it in `
 And after that the sky is the limit, I can style any elements or group of elements in customizer.
 
 The intro is over let's get to some advanced stuff.
+
+# List of fields
+
+Fields<a name="list_of_fields"></a>  | [Live Preview Support!](#live_preview_support) | Description
+------------- | ------------- | -------------
+Text  | Yes [with classes](#live_preview_with_classes) | A simple text input
+Textarea | Yes [with classes](#live_preview_with_classes) | A simple text area input
+Ace Editor | Yes [with classes](#live_preview_with_classes) | An ace editor that supports plain_text / css / html / javascript / json / markdown
+Color | Yes | A simple color picker
+Range | Yes | The default html5 range input
+Font | Custom Live Preview | A complete font selector with Live Preview, google fonts, filtrable theme fonts and custom callbacks 
+Typography | No | This is a font selector but it will be soon depricated, use Font instead
+Select | No | The standard HTML select
+Radio | No |
+Checkbox | No | 
+Upload | No | This field allows you to upload a file which you can use it later in front-end
+Image | No | This is like the upload field, but it accepts only images 
+Date | No | 
+Pages select | No | The standard WordPress Page Select
+[Select2](https://select2.github.io/) | No | An awesome select 
+[Presets](#presets_title) | No | An radio input option to select a group of options (inception style ^^)
 
 # Advanced Things
 
@@ -142,23 +161,6 @@ function this_setting_can_call_this_function( $value, $selector, $property, $uni
 
 ```
 
-Fields<a name="list_of_fields"></a>  | [Live Preview Support!](#live_preview_support) | Description
-------------- | ------------- | -------------
-Text  | Yes [with classes](#live_preview_with_classes) | A simple text input
-Textarea | Yes [with classes](#live_preview_with_classes) | A simple text area input
-Ace Editor | Yes [with classes](#live_preview_with_classes) | An ace editor that supports plain_text / css / html / javascript / json / markdown
-Color | Yes | A simple color picker
-Range | Yes | The default html5 range input
-Typography | No | This is an awesome font selector, it supports standard fonts and google fonts. You can also Group fonts or offer a list of recommended fonts
-Select | No | The standard HTML select
-Radio | No |
-Checkbox | No | 
-Upload | No | This field allows you to upload a file which you can use it later in front-end
-Image | No | This is like the upload field, but it accepts only images 
-Date | No | 
-Pages select | No | The standard WordPress Page Select
-[Select2](https://select2.github.io/) | No | An awesome select 
-[Presets](#presets_title) | No | An radio input option to select a group of options (inception style ^^)
 HTML field | No | A field which allows you to add custom HTML in customizer and hook into it with javascript later ;) 
 
 ### Live Preview Support<a name="live_preview_support"></a>
@@ -388,4 +390,87 @@ Just add this section in your config
 		),
 	)
 )
+```
+
+
+### Font Selector<a name="font_selector"></a>
+
+In 1.3.0 We introduced the new font selector, it works with live preview only and it has this possible configs:
+
+```
+'headings_font' => array(
+    'type'        => 'font',
+    'label'       => esc_html__( 'Headings', 'customify' ),
+    'desc'        => esc_html__( 'o descriere', 'customify' ),
+    'selector'    => 'h1, h2, h3, h4, .title, .sub-title',
+
+    // Set the defaults
+    'default'   => array(
+        'font-family' => 'Open Sans',
+        'font-weight' => '400',
+        'font-size'   => 24,
+        'line-height' => 1.5,
+        'letter-spacing' => 1,
+        'text-align' => 'initial',
+        'text-transform' => 'uppercase',
+        'text-decoration' => 'underline'
+    ),
+
+    //'load_all_weights' => true,
+
+    'recommended' => $recommended_headings_fonts,   // List of recommended fonts defined by theme
+    
+    // Sub Fields Configuration (optional)
+    'fields'    => array(
+        'font-size'     => array(                           // Set custom values for a range slider
+            'min'          => 10,
+            'max'          => 40,
+            'step'         => 1,
+            'unit'         => 'px',
+        ),
+        'line-height'    => array(0, 2, 0.1, ''),           // Short-hand version
+        'letter-spacing' => array(-1, 4, 0.1, 'em'),
+        'text-align'     => true,                           // Disable sub-field (False by default)
+        'text-transform' => true,
+        'text-decoration'=> true,
+    ),
+    'callback' => 'your_custom_callback_function'
+),
+```
+
+In the above example you can see the callback parameter, it supports a PHP or Javascript function
+which should replace the current output of the font
+
+```
+function your_custom_callback_function( $value, $font ) {
+	return $combined_css';
+}
+
+function add_javascript_callback_function() { ?>
+	<script>
+		function your_custom_callback_function( $values, field ) {
+			return $combined_css;
+		}
+
+	</script>
+<?php }
+add_action( 'customize_preview_init', 'add_javascript_callback_function' );
+```
+
+
+### Local Fonts
+
+Also this font selector comes with the ability to add custom fonts from a theme.
+If a theme comes with the name of a font and a stylesheet with its fontface it
+will be added as the first option of the font selector
+```
+function theme_add_customify_theme_fonts ( $fonts ) {
+	$fonts['Custom Font'] = array(
+		'family' => 'Custom Font',
+		'src' => get_template_directory_uri() . '/assets/fonts/custom_font/stylesheet.css',
+		'variants' => array( '400', '700' )
+	);
+	return $fonts;
+}
+add_filter( 'customify_theme_fonts', 'theme_add_customify_theme_fonts' );
 ```

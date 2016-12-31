@@ -1,9 +1,9 @@
 === Customify - A Theme Customizer Booster ===
-Contributors: pixelgrade, euthelup, babbardel
+Contributors: pixelgrade, euthelup, babbardel, vlad.olaru, cristianfrumusanu
 Tags: customizer, css, editor, live, preview, customise
-Requires at least: 4.3.0
-Tested up to: 4.5.2
-Stable tag: 1.2.4
+Requires at least: 4.4.0
+Tested up to: 4.7.0
+Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,7 +17,9 @@ With [Customify](https://github.com/pixelgrade/customify), developers can easily
 
 * **Color.** A color picker used to control any text or background color of an element.
 
-* **Typography.** A series of typographic options that allow you to access the massive **Google Fonts library** and make them available inside your theme customizer.
+* **Font.** A real font selector which includes a flexible library of fonts(Fonto, google fonts or added via fliter) and allows you to customize, with live preview, properties like font-weight, size, letter spacing, text align, text decoration etc.
+
+* **Typography.** (Deprecated) A series of typographic options that allow you to access the massive **Google Fonts library** and make them available inside your theme customizer.
 
 * **CSS Editor.** A powerful **Live CSS Editor** directly into your customizer! Useful for better control over the appearance of your theme without the need to create a child theme or worry about theme updates overwriting your customizations.
 
@@ -31,7 +33,26 @@ With [Customify](https://github.com/pixelgrade/customify), developers can easily
 
 * **And more others [this is the full list](https://github.com/pixelgrade/customify#list_of_fields)
 
+**Made with love by Pixelgrade**
+
 == Changelog ==
+
+= 1.3.1 =
+* Fixed compatibility with PHP <= 5.3.x
+
+= 1.3.0 =
+* Added the new and awesome `font` selector
+* The live CSS editor is now removed for 4.7, but don't worry, your style will be imported into the new [CSS Editor](https://make.wordpress.org/core/2016/11/26/extending-the-custom-css-editor/)
+* Added compatibility with 4.7
+
+= 1.2.7 =
+* Added capability to control the Jetpack Sharing default options
+
+= 1.2.6 =
+* Added capability to define Jetpack default and hidden modules
+
+= 1.2.5 =
+* Fixed WordPress 4.7 incompatibilities
 
 = 1.2.4 =
 * Added: Support for Fonto plugin

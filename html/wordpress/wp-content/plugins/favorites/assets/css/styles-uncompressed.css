@@ -1,10 +1,19 @@
 .simplefavorite-button.active {
   opacity: 0.7; }
+
 .simplefavorite-button.has-count {
   position: relative; }
 
 .simplefavorites-loading {
   margin-left: 8px; }
+
+.simplefavorite-button {
+  font-size: 32px;
+}
+
+.fav-button {
+  font-size: 32px;
+}
 
 @font-face {
   font-family: 'favorites';
@@ -26,7 +35,8 @@
   line-height: 1;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+}
 
 .sf-icon-star-empty:before {
   content: "\e600"; }
