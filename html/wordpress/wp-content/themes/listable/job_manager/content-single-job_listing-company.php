@@ -18,6 +18,8 @@ $twitter = get_post_meta( get_the_ID(), '_company_twitter', true);
 	<?php
 	display_average_listing_rating();
 
+	echo "나봄하우스를 통해 전화했어요~ 라고 말해주세요!";
+
 	if ( ! empty( $phone ) ) :
 		if ( strlen( $phone ) > 30 ) : ?>
 			<a class="listing-contact  listing--phone" href="tel:<?php echo $phone; ?>" itemprop="telephone"><?php esc_html_e( 'Phone', 'listable' ); ?></a>
